@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Peta Desa Tanjung Aru</title>
+	<link rel="stylesheet" href="styles/styles.css" />
+    <script async src="./javascript/index.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+	  h1 { color: #ffffff; 
+	  font-family:helvetica;
+	  text-align:center;
+	  }
+    </style>
+  </head>
+  <body bgcolor="#007ac2">
+	<h1>Peta Desa Tanjung Aru</h1>
+	<!-- Tab links -->
+	<div class="tab">
+		<button class="tablinks" onclick="openCity(event, 'dusun')">Persebaran Dusun</button>
+		<button class="tablinks" onclick="openCity(event, 'persebaran_rt')">Persebaran RT</button>
+		<button class="tablinks" onclick="openCity(event, 'permukiman_rt')">Permukiman per RT</button>
+		<button class="tablinks" onclick="openCity(event, 'fasilitas')">Persebaran Fasilitas</button>
+	</div>
+	<!-- Tab content -->
+	<div id="dusun" class="tabcontent">
+		<iframe width="100%" height="530px" src="https://www.arcgis.com/apps/PublicInformation/index.html?appid=f69217c61fc6433da01a242ab6a09737" frameborder="0" scrolling="no"></iframe>
+	</div>
+	<div id="persebaran_rt" class="tabcontent">
+		<iframe width="100%" height="530px" src="https://www.arcgis.com/apps/PublicInformation/index.html?appid=56f25ca8d246475483f0cc632acbddaf" frameborder="0" scrolling="no"></iframe>
+	</div>
+	<div id="permukiman_rt" class="tabcontent">
+		<iframe width="100%" height="530px" src="https://www.arcgis.com/apps/PublicInformation/index.html?appid=189d17b088c940edae130f871721a94a" frameborder="0" scrolling="no"></iframe>
+	</div>
+	<div id="fasilitas" class="tabcontent">
+		<iframe width="100%" height="530px" src="https://www.arcgis.com/apps/PublicInformation/index.html?appid=9ff75a6a981d429aa6069b2d343dcb87" frameborder="0" scrolling="no"></iframe>
+	</div>
+  </body>
+</html>
